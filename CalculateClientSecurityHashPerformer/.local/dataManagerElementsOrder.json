@@ -1,0 +1,202 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strUserName&Sequence_9",
+        "strPassword&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strClientId&Sequence_1",
+        "strClientName&Sequence_1",
+        "strClientCountry&Sequence_1",
+        "strSecurityHashForClient&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_ExtractWorkItemDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_52",
+        "bool_PreCondition&Sequence_53",
+        "bool_PostCondition&Sequence_53",
+        "strWorkItemDetails&Sequence_54",
+        "bool_PostCondition&Sequence_55"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "out_strClientId",
+        "out_strClientName",
+        "out_strClientCountry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GeneratorSecurityHash/GeneratorSecurityHash_Create.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bool_PostCondition&Sequence_13",
+        "bool_PostCondition&Sequence_10",
+        "strFileName&Sequence_2",
+        "bool_PostCondition&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strClientId",
+        "in_Config",
+        "in_strClientName",
+        "in_strClientCountry",
+        "out_SecurityHash"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_UpdateWorkItem.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bool_PostCondition&Sequence_18",
+        "strFileName&Sequence_2",
+        "bool_IsEqual&Sequence_14"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_SecurityHashForClient"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ts_RetryInterval&Sequence_2",
+        "int_RetryNumber&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_1",
+        "boolCredNotFound&Sequence_6",
+        "boolPostCondition&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSystem1URL",
+        "in_strSystem1UserName",
+        "in_strSystem1Password",
+        "in_intNumbersOfRetries",
+        "in_tsRetryInterval",
+        "in_TimeoutM"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_OpenACMESystem.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_2",
+        "bool_PostCondition&Sequence_12"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSystem1URL",
+        "in_intNumbersOfRetries",
+        "in_tsRetryInterval"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "System1/System1_Logout.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_2",
+        "variable1&Sequence_2",
+        "bool_PreCondition&Sequence_15",
+        "in_strSystem1URL&Sequence_10",
+        "boolCredNotFound&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_tsRetryInterval",
+        "in_intNumbersOfRetries"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GeneratorSecurityHash/GeneratorSecurityHash_Open.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_8",
+        "bool_PostCondition&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
